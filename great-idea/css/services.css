@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,7 +27,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	/* list-style: none; */
 }
 blockquote, q {
 	quotes: none;
@@ -49,7 +44,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    margin:20px;
 }
 
 html, body {
@@ -62,8 +58,6 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 nav{
 	display:flex;
@@ -84,105 +78,106 @@ color:gray
 }
 
 nav a:visited{
-	color:gray;
+    color:gray;
+}
 
+.services-header-img{
+    width:100%;
+}
+
+.header{
+padding:50px;
+border-bottom:1px solid black;
 }
 
 h1{
-	font-size: 65px;
-	display:flex;
-	text-align:center;
-	width:100%;
-	/* position:absolute; */
-	/* top:85px; */
-	/* left:200px; */
-	
-}
-#start{
-	
-	text-align:center;
-	/* position:absolute; */
-	/* left:275px; */
-	/* top:290px; */
-	border:solid black 1px;
-	padding:5px 35px 5px 35px;
+    font-size:32px;
 }
 
-.innovation{
-	display:flex;
-	flex-wrap:wrap;
-	align-items:baseline;
-	align-content:center;
-	
-	
-}
-.topimage{
-	
-
+.group1 {
+display:flex;
+padding: 50px;
+flex-wrap:wrap;
+justify-content:space-evenly;
+align-content: space-between;
+border-bottom:3px solid black;
 }
 
-header{
-	display:flex;
-	border-bottom:1px solid black;
-	justify-content:space-around;	
-	padding:0px 0px 50px 0px;
+p{
+text-align:center;
+padding:10px 25px 10px 25px;
+margin:15px;
+background-color:white;
+width:30%;
+border:1px solid black;
+border-radius: 5px;
+font-size:12px;
 }
 
-.group1{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	
-	
-
+.design{
+width:40%;
+padding:25px;
+background-color:#DCDCDC;
+border:1px solid black;
+margin:10px;
 }
 
-.features {
-	/* display:flex; */
-	width:40%;
-	padding:20px; 
+.ux{
+    width:40%;
+    padding:25px;
+    background-color:#DCDCDC;
+border:1px solid black;
+margin:10px;
 }
 
-.about {
-	/* display:flex; */
-	 width:40%; 
-	padding:50px;
+.marketing{
+    width:40%;
+    padding:25px;
+    background-color:#DCDCDC;
+border:1px solid black;
+margin:10px;
 }
 
-.middle-img{
-	width:100%;
+.webdev{
+    width:40%;
+    padding:25px;
+    background-color:#DCDCDC;
+border:1px solid black;
+margin:10px;
 }
 
-.group2{
-	display:flex;
-	flex-direction:row;
-	justify-content:space-evenly;
+.iosdev{
+    width:40%;
+    padding:25px;
+    background-color:#DCDCDC;
+border:1px solid black;
+margin:10px;
 }
 
-.services {
-	/* display:inline-block; */
-	/* width:30%; */
-	padding:20px;
-}
-.product {
-	
-	/* width:30%; */
-	padding:20px;
-}
-.vision {
-	/* display:inline-block; */
-	/* width:30%; */
-	padding:20px;
-}
-.contact{
-	border-top:1px solid black;
-padding:20px;
+.android{
+    width:40%;
+    padding:25px;
+    background-color:#DCDCDC;
+border:1px solid black;
+margin:10px;
 }
 
-footer{
-	display:flex;
-	justify-content:center;
-	width:100%;
-	padding:100px;
+.group2 {
+display:flex;
+justify-content:space-evenly;
+margin:50px;
+align-content:center;
+}
 
+.facts{
+width:40%;
+}
+ul{
+    list-style-type:square;
+    margin:20px;
+}
+
+.footer{
+display:flex;
+justify-content:center;
 }
